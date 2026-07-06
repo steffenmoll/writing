@@ -26,3 +26,61 @@ code {
   font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   background-color: #eef0f4;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #191b1f;
+    color: #d9dbe0;
+  }
+
+  a,
+  a:visited {
+    color: #8fa3c9;
+  }
+
+  a:hover {
+    color: #d9dbe0;
+  }
+
+  .site-title,
+  .site-title:visited {
+    color: #d9dbe0;
+  }
+
+  .post-meta {
+    color: #8b8e94;
+  }
+
+  pre,
+  code {
+    background-color: #232a35;
+    border-color: #2b323d;
+  }
+
+  .site-header {
+    border-top-color: #2b323d;
+    border-bottom-color: #2b323d;
+  }
+
+  .site-footer {
+    border-top-color: #2b323d;
+  }
+
+  blockquote {
+    color: #b7bac0;
+    border-left-color: #2b323d;
+  }
+
+  table {
+    color: #d9dbe0;
+
+    tr:nth-child(even) {
+      background-color: #1f2126;
+    }
+
+    th,
+    td {
+      border-color: #2b323d;
+    }
+  }
+}
