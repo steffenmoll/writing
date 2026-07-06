@@ -39,13 +39,12 @@ The reference was useful for layout density and restraint, but three of its choi
 
 Targeted overrides on top of the `minima` gem theme, not a full theme eject and not a hand-rolled theme. Minima already provides pagination, the Atom feed, SEO meta tags, and page-based nav (via `about.md`) — none of that needs to change, so only the following files are added or overridden:
 
-- `_sass/minima/custom-variables.scss` — accent color and font-family variables (Inter). This is a minima-recognized override point; a locally-present file with this path takes precedence over the gem's own.
-- `_sass/minima/custom-styles.scss` — code-block styling, and dark-mode CSS rules if the GitHub Pages-pinned minima version doesn't already handle `prefers-color-scheme` natively.
-- `_includes/custom-head.html` — Google Fonts `<link>` tags. This is a minima-recognized empty hook include, meant exactly for this kind of addition.
-- `_layouts/post.html` — one locally overridden file, needed only to compute and display estimated read time next to the date (minima's default post layout shows the date but has no read-time calculation). Compute it as `content word count / 200`, rounded up to the nearest minute — the standard convention used by most Jekyll read-time snippets.
+- `assets/main.scss` — overrides minima's stub of the same path. Sets `$base-font-family`, `$text-color`, `$background-color`, and `$brand-color` before `@import "minima";` (these are declared with `!default` upstream, so setting them earlier in the cascade wins), then appends custom rules after the import for heading weight, code-block font/background, and the dark-mode media query.
+- `_includes/head.html` — overrides minima's version of the same path, adding the Google Fonts `<link>` tags for Inter and IBM Plex Mono.
+- `_layouts/post.html` — overrides minima's version of the same path, adding the estimated read-time calculation next to the date. Computed as `content word count / 200`, rounded up to the nearest minute (Liquid's `ceil` filter) — the standard convention used by most Jekyll read-time snippets.
 - `_config.yml` — add `show_excerpts: true`.
 
-**Risk to verify during implementation**: confirm which minima version GitHub Pages actually builds with (via the `github-pages` gem's pinned dependency list) before assuming native `prefers-color-scheme` support. If it's missing, add it as a small media-query block in `custom-styles.scss` rather than ejecting further.
+**Resolved risk**: confirmed via `https://pages.github.com/versions.json` that GitHub Pages currently builds this site with **Jekyll 3.10.0 / minima 2.5.1**. That version predates minima's native dark-mode support (added in 3.x) and has none of the `custom-variables.scss` / `custom-styles.scss` / `custom-head.html` hook files that exist in later minima versions — those files don't exist in 2.5.1, which is why the approach above overrides `assets/main.scss`, `_includes/head.html`, and `_layouts/post.html` directly instead. Dark mode is implemented as a fully hand-written `prefers-color-scheme` media query rather than relying on any theme-provided support.
 
 ## Out of scope
 
