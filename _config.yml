@@ -3,5 +3,9 @@ title: steffen novak mollestad
 description: a place for where thoughts turns into writing
 author: steffenmoll
 
+show_excerpts: true
+
 exclude:
   - starting-point.md
+  - docs
+  - README.md
