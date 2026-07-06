@@ -8,3 +8,21 @@ $background-color: #fbfbfa;
 $brand-color: #4a5a7a;
 
 @import "minima";
+
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.post-title,
+.post-link {
+  font-weight: 600;
+}
+
+.site-title,
+.site-title:visited {
+  color: $text-color;
+}
+
+pre,
+code {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background-color: #eef0f4;
+}
