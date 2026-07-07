@@ -4,7 +4,7 @@ title: About
 permalink: /about
 ---
 
-I work with data platforms and investment data, currently at (NBIM)[https://www.nbim.no].
+I work with data platforms and investment data, currently at [Norges Bank Investment Management](https://www.nbim.no).
 
 Interested in how data and AI shapes the future.
 
