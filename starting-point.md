@@ -22,9 +22,10 @@ Avoid: don't get into governance or ownership here (that's post 3), don't get in
 Angle: the hard part of a data platform isn't the tech stack, it's the organization around it.
 
 Key points:
-- Problems scale with org size, not with data volume
+- Problems scale with org size, not with data volume. Small organization, people know the available datasets. With bigger organizations, people tend to stick to their familiar branch, and datasets easily become duplicated with different colors.
 - What "functional" means changes as the org grows — a platform that works for one team breaks down across ten
 - Where the data-mesh idea already assumes an organizational maturity most orgs don't have
+- the vision should be to build datasets hence data domains - often (unfortunatley) managed by one team - which lasts and lives healty also after an org change. Domains could be a database, schema, dbt project, etc.
 
 Avoid: don't repeat post 1's "platform doesn't solve everything" framing, take it as given and move on.
 
