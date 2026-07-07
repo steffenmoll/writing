@@ -5,8 +5,8 @@ layout: default
 <article class="note">
   <div>
     <h1>{{ page.title }}</h1>
-    <time datetime="{{ page.last_modified_at_timestamp }}">
-      Last updated on {{ page.last_modified_at_timestamp | date: "%B %-d, %Y" }}
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      Published on {{ page.date | date: "%B %-d, %Y" }}
     </time>
   </div>
 
