@@ -1,6 +1,6 @@
 ---
 title: "The org chart is the real architecture"
-date: 2026-07-08
+date: 2026-07-07
 ---
 
 *This is the second post in a series on data platforms. If you haven't, [[One data platform does not solve your data problem|read part 1]] first.*
