@@ -7,7 +7,7 @@ permalink: /
 
 I'm Steffen, and this is where I write things down when they've been rattling around in my head for too long. Mostly data platforms and the mess that comes with them, sometimes whatever else is on my mind.
 
-<strong>Recently updated notes</strong>
+<strong>Last posts</strong>
 
 <ul>
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
