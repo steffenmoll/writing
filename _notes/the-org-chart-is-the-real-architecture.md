@@ -13,7 +13,7 @@ In a five-person team, everyone knows the handful of datasets that exist and who
 
 "Functional" moves too. For one team, functional means: ask Sarah, she built it. Across ten teams, that stops working the moment Sarah changes roles, and nobody agrees on who inherited what she built.
 
-Reorgs make this visible fast. Boundaries move overnight; the data doesn't move with them. A dataset's owning team gets merged or split, and the dataset just sits there, kept alive by whoever still has write access, while the new domains around the new chart get all the attention. Nobody decided to abandon it. It just stopped being anyone's problem the day the boxes moved. Whoever officially inherits it later usually doesn't want it: owning code you didn't write and can't explain isn't a promotion, it's debt with your name on the pager.
+Reorgs make this visible fast. Boundaries move overnight; the data doesn't move with them. A dataset's owning team gets merged or split, and the dataset just sits there, kept alive by whoever still has write access, while the new domains around the new chart get all the attention. Nobody decided to abandon it. It just stopped being anyone's problem the day the boxes moved. Whoever officially inherits it later usually doesn't want it: owning code you didn't write and can't explain isn't a promotion, (traditionally) it's been debt with your name on the pager (more on this in a coming post).
 
 This is where data mesh quietly assumes something most orgs don't have: real organizational maturity. Distributing ownership to the teams closest to the data only works if those teams can actually hold onto it, through growth and through reorgs. Most companies aren't there yet, which is how "we're doing mesh" turns into the mess from part 1.
 
